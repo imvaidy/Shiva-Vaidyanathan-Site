@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#FFFFFF">
+<title>Shiva Vaidyanathan ( 001 )</title>
+<meta name="description" content="Commercial marketer. Documented collector of 183 fine fragrances. Open to relocation across the GCC.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=DotGothic16&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FFFFFF;
+    --ink:#0A0A0A;
+    --grey:#6E6E6E;
+    --pale:#F5F5F5;
+    --hair:#E3E3E3;
+    --red:#FF1E00;
+    --maxw:960px;
+
+    --fHead:'Space Grotesk',sans-serif;
+    --fMono:'IBM Plex Mono',monospace;
+    --fDot:'DotGothic16',monospace;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:var(--fMono); font-size:15px; line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--ink);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--red); outline-offset:3px;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px;}
+  .dot{font-family:var(--fDot); letter-spacing:0.02em;}
+
+  /* ---------- Top bar ---------- */
+  .topbar{
+    border-bottom:1px solid var(--hair);
+    padding:18px 0;
+    position:sticky; top:0; background:var(--bg); z-index:50;
+  }
+  .topbar .wrap{display:flex; justify-content:space-between; align-items:center;}
+  .tb-mark{font-family:var(--fHead); font-weight:700; font-size:15px; display:flex; align-items:center; gap:8px;}
+  .tb-mark .rdot{width:7px; height:7px; border-radius:50%; background:var(--red); display:inline-block;}
+  .tb-nav{display:flex; gap:22px; font-family:var(--fMono); font-size:11.5px; text-transform:uppercase; letter-spacing:0.08em; color:var(--grey);}
+  .tb-nav a{text-decoration:none; color:var(--grey);}
+  .tb-nav a:hover{color:var(--ink);}
+  @media (max-width:640px){ .tb-nav{display:none;} }
+
+  /* ---------- Hero ---------- */
+  header.hero{padding:100px 0 70px; border-bottom:1px solid var(--hair);}
+  .hero-eyebrow{
+    font-family:var(--fDot); font-size:13px; letter-spacing:0.05em;
+    color:var(--grey); margin:0 0 22px; display:flex; align-items:center; gap:10px;
+  }
+  .hero-eyebrow .rdot{width:6px; height:6px; border-radius:50%; background:var(--red); display:inline-block;}
+  h1.hero-name{
+    font-family:var(--fHead); font-weight:700;
+    font-size:clamp(40px,7.5vw,84px);
+    line-height:0.98; letter-spacing:-0.02em;
+    margin:0 0 28px; color:var(--ink);
+  }
+  h1.hero-name .paren{font-family:var(--fDot); font-weight:400; font-size:0.32em; color:var(--grey); vertical-align:middle; margin-left:14px;}
+  .hero-sub{font-family:var(--fMono); font-size:15.5px; color:var(--grey); max-width:520px; margin:0 0 40px;}
+  .hero-sub b{color:var(--ink); font-weight:600;}
+
+  .spec-strip{
+    display:grid; grid-template-columns:repeat(4,1fr);
+    border-top:1px solid var(--hair); border-bottom:1px solid var(--hair);
+    margin-bottom:40px;
+  }
+  @media (max-width:700px){ .spec-strip{grid-template-columns:repeat(2,1fr);} }
+  .spec-cell{padding:18px 20px; border-right:1px solid var(--hair);}
+  .spec-cell:last-child{border-right:none;}
+  .spec-cell .k{font-family:var(--fDot); font-size:10.5px; color:var(--grey); text-transform:uppercase; letter-spacing:0.05em; display:block; margin-bottom:6px;}
+  .spec-cell .v{font-family:var(--fMono); font-size:13.5px; font-weight:600; color:var(--ink);}
+
+  .cta-row{display:flex; gap:0; flex-wrap:wrap; border:1px solid var(--ink);}
+  .btn{
+    font-family:var(--fMono); font-size:12px; font-weight:600;
+    letter-spacing:0.04em; text-transform:uppercase;
+    text-decoration:none; padding:16px 26px;
+    display:inline-block; border-right:1px solid var(--ink);
+    transition:background .15s ease, color .15s ease;
+    flex:1; text-align:center;
+  }
+  .cta-row .btn:last-child{border-right:none;}
+  .btn-solid{background:var(--ink); color:var(--bg);}
+  .btn-solid:hover{background:var(--red);}
+  .btn-ghost{background:var(--bg); color:var(--ink);}
+  .btn-ghost:hover{background:var(--pale);}
+  .resume-line{margin-top:16px; font-family:var(--fMono); font-size:11.5px;}
+  .resume-line a{color:var(--grey); text-decoration:underline; text-underline-offset:3px;}
+  .resume-line a:hover{color:var(--red);}
+
+  /* ---------- Section shell ---------- */
+  section{padding:80px 0; border-bottom:1px solid var(--hair);}
+  section:last-of-type{border-bottom:none;}
+  .sec-num{
+    font-family:var(--fDot); font-size:13px; color:var(--red);
+    display:flex; align-items:center; gap:10px; margin-bottom:18px;
+  }
+  h2.sec-title{
+    font-family:var(--fHead); font-weight:700;
+    font-size:clamp(26px,3.6vw,38px); line-height:1.15;
+    margin:0 0 16px; color:var(--ink); letter-spacing:-0.01em;
+  }
+  .lede{color:var(--grey); font-size:14.5px; max-width:560px;}
+
+  /* ---------- Split ---------- */
+  .split-grid{display:grid; grid-template-columns:1fr 1fr; gap:40px; margin-top:36px;}
+  @media (max-width:700px){ .split-grid{grid-template-columns:1fr;} }
+  .split-col .tag{font-family:var(--fDot); font-size:11px; color:var(--red); text-transform:uppercase; display:block; margin-bottom:10px;}
+  .split-col p{font-size:14.5px; color:var(--ink); line-height:1.7; margin:0;}
+  .split-col.dim p{color:var(--grey);}
+  .split-foot{font-family:var(--fMono); font-size:14.5px; color:var(--ink); margin-top:32px; padding-top:28px; border-top:1px solid var(--hair);}
+
+  /* ---------- File (roles as spec sheets) ---------- */
+  .role-block{border-top:1px solid var(--hair); padding:28px 0;}
+  .role-top{display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:10px; margin-bottom:6px;}
+  .role-block h3{font-family:var(--fHead); font-weight:700; font-size:19px; margin:0; color:var(--ink);}
+  .role-block .rdate{font-family:var(--fDot); font-size:12px; color:var(--grey);}
+  .role-block .rco{font-family:var(--fMono); font-size:12px; color:var(--red); text-transform:uppercase; letter-spacing:0.03em; margin-bottom:14px; display:block;}
+  .role-specs{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:16px;}
+  @media (max-width:700px){ .role-specs{grid-template-columns:1fr;} }
+  .role-specs div{border-left:2px solid var(--ink); padding-left:12px;}
+  .role-specs .k{font-family:var(--fDot); font-size:10px; color:var(--grey); text-transform:uppercase; display:block; margin-bottom:4px;}
+  .role-specs .v{font-family:var(--fMono); font-size:13px; color:var(--ink); font-weight:600;}
+
+  /* ---------- Collection ---------- */
+  .bottle-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--hair); border:1px solid var(--hair); margin-top:24px;}
+  @media (max-width:700px){ .bottle-grid{grid-template-columns:repeat(2,1fr);} }
+  .bottle-cell{background:var(--bg); padding:20px 18px; min-height:100px;}
+  .bottle-cell .bn{font-family:var(--fHead); font-weight:600; font-size:14px; color:var(--ink); display:block;}
+  .bottle-cell .bl{font-family:var(--fMono); font-size:12px; color:var(--grey); margin-top:8px; display:block;}
+
+  .depth-row{display:grid; grid-template-columns:1fr 1fr; gap:28px; margin-top:40px;}
+  @media (max-width:700px){ .depth-row{grid-template-columns:1fr;} }
+  .depth-row h4{font-family:var(--fDot); font-size:11px; color:var(--red); text-transform:uppercase; margin:0 0 8px;}
+  .depth-row p{color:var(--grey); font-size:13px; margin:0;}
+  .depth-row p b{color:var(--ink); font-weight:600;}
+
+  /* ---------- Dispatch ---------- */
+  .dispatch{border-left:2px solid var(--ink); padding:0 0 0 26px; margin-top:20px;}
+  .dispatch .issue{font-family:var(--fDot); font-size:11px; color:var(--red); text-transform:uppercase; display:block; margin-bottom:12px;}
+  .dispatch h3{font-family:var(--fHead); font-weight:700; font-size:21px; margin:0 0 14px; color:var(--ink);}
+  .dispatch p{color:var(--grey); font-size:14px; margin:0 0 12px; line-height:1.7;}
+  .dispatch p:last-child{margin:0;}
+
+  /* ---------- Footer ---------- */
+  footer.contact{padding:80px 0 40px; text-align:center;}
+  footer.contact h2{font-family:var(--fHead); font-weight:700; font-size:clamp(24px,3.6vw,36px); margin:0 0 16px;}
+  footer.contact .lede{margin:0 auto 36px;}
+  .contact-cta{display:flex; gap:0; justify-content:center; flex-wrap:wrap; border:1px solid var(--ink); max-width:600px; margin:0 auto 44px;}
+  .fine-print{font-family:var(--fDot); font-size:11px; color:var(--grey); text-align:center;}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="tb-mark"><span class="rdot"></span>SHIVA VAIDYANATHAN</span>
+    <nav class="tb-nav">
+      <a href="#split">The Split</a>
+      <a href="#file">The File</a>
+      <a href="#collection">Collection</a>
+      <a href="#dispatch">Field Notes</a>
+    </nav>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="hero-eyebrow"><span class="rdot"></span>PROFILE — CHENNAI, INDIA — EST. CAREER 2022</span>
+    <h1 class="hero-name">Shiva Vaidyanathan<span class="paren">( 001 )</span></h1>
+    <p class="hero-sub"><b>Commercial marketer.</b> Documented collector, 183 SKUs across 40+ houses. MBA, Marketing &amp; Operations. Open to relocation across the GCC.</p>
+
+    <div class="spec-strip">
+      <div class="spec-cell"><span class="k">Status</span><span class="v">Available Now</span></div>
+      <div class="spec-cell"><span class="k">Notice</span><span class="v">None</span></div>
+      <div class="spec-cell"><span class="k">Relocation</span><span class="v">UAE / KSA / Oman</span></div>
+      <div class="spec-cell"><span class="k">Collection</span><span class="v">183 / 40+</span></div>
+    </div>
+
+    <div class="cta-row">
+      <a class="btn btn-solid" href="mailto:mailsiget@gmail.com?subject=Let%27s%20talk">Email</a>
+      <a class="btn btn-ghost" href="https://wa.me/919677275950?text=Hi%20Shiva%2C%20I%20came%20across%20your%20profile%20and%20wanted%20to%20connect." target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/shiva-vaidyanathan-" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <p class="resume-line"><a href="#" onclick="return false;">Download full resume (PDF, one page)</a></p>
+  </div>
+</header>
+
+<section id="split">
+  <div class="wrap">
+    <span class="sec-num dot">( 01 ) THE SPLIT</span>
+    <h2 class="sec-title">Two tracks. Running in parallel since 2022.</h2>
+    <div class="split-grid">
+      <div class="split-col">
+        <span class="tag">Track One — Commercial</span>
+        <p>Enterprise sales cycles, KOL relationships, revenue targets. Built an institutional pipeline from zero at a robotic-surgery startup. Managed a high-net-worth client book to a structured monthly number at a wealth management firm.</p>
+      </div>
+      <div class="split-col dim">
+        <span class="tag">Track Two — Category</span>
+        <p>An entirely self-funded, self-directed education in fine fragrance. No industry role required it. A decade of buying, comparing, and arguing internally about concentration strategy until a 183-bottle reference library existed almost by accident.</p>
+      </div>
+    </div>
+    <p class="split-foot">At some point the two tracks stopped running in parallel and started looking like the same skill, aimed at two different categories.</p>
+  </div>
+</section>
+
+<section id="file">
+  <div class="wrap">
+    <span class="sec-num dot">( 02 ) THE FILE</span>
+    <h2 class="sec-title">Four roles. Read as a spec sheet.</h2>
+    <p class="lede">Not a career ladder — a proof-of-work log.</p>
+
+    <div class="role-block">
+      <div class="role-top"><h3>Brand Strategy &amp; Marketing Consultant</h3><span class="rdate">2025 — PRESENT</span></div>
+      <span class="rco">HIS Studio · Chennai</span>
+      <div class="role-specs">
+        <div><span class="k">Scope</span><span class="v">Full GTM strategy, from zero</span></div>
+        <div><span class="k">Channel</span><span class="v">Instagram / e-comm / content</span></div>
+        <div><span class="k">Result</span><span class="v">Reach lift inside 60 days</span></div>
+      </div>
+    </div>
+
+    <div class="role-block">
+      <div class="role-top"><h3>Key Account Manager</h3><span class="rdate">2024 — 2025</span></div>
+      <span class="rco">Motilal Oswal Financial Services · Chennai</span>
+      <div class="role-specs">
+        <div><span class="k">Target</span><span class="v">~$18,000 / month</span></div>
+        <div><span class="k">Accounts</span><span class="v">30–45 net new / 9 months</span></div>
+        <div><span class="k">Cadence</span><span class="v">30+ touchpoints / month</span></div>
+      </div>
+    </div>
+
+    <div class="role-block">
+      <div class="role-top"><h3>Business Development Head</h3><span class="rdate">2023 — 2024</span></div>
+      <span class="rco">iMrobonix Med-Tech · Chennai</span>
+      <div class="role-specs">
+        <div><span class="k">Product</span><span class="v">Surgical robot + AI prosthetic</span></div>
+        <div><span class="k">Accounts</span><span class="v">30+ institutional, from zero</span></div>
+        <div><span class="k">Method</span><span class="v">ROI-based value propositions</span></div>
+      </div>
+    </div>
+
+    <div class="role-block">
+      <div class="role-top"><h3>Client Servicing Manager (Intern)</h3><span class="rdate">2022</span></div>
+      <span class="rco">Brand Avatar, LLP · Chennai</span>
+      <div class="role-specs">
+        <div><span class="k">Clients</span><span class="v">8+, multi-sector</span></div>
+        <div><span class="k">PR</span><span class="v">90+ platforms, 1 live TV placement</span></div>
+        <div><span class="k">Award</span><span class="v">Best SIP 2022, ICFAI</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="collection">
+  <div class="wrap">
+    <span class="sec-num dot">( 03 ) THE COLLECTION</span>
+    <h2 class="sec-title">183 SKUs. 40+ houses. One line nearly complete.</h2>
+    <p class="lede">A working reference library, built the way a category manager builds a competitive set.</p>
+
+    <div class="role-top" style="margin-top:36px; border-top:1px solid var(--hair); padding-top:16px;">
+      <h3 style="font-size:15px;">Amouage</h3>
+      <span class="rdate">9 SKUS · CORE LINE</span>
+    </div>
+    <div class="bottle-grid">
+      <div class="bottle-cell"><span class="bn">Gold</span><span class="bl">Where the diplomacy started.</span></div>
+      <div class="bottle-cell"><span class="bn">Outlands</span><span class="bl">Left civilization. Kept the receipts.</span></div>
+      <div class="bottle-cell"><span class="bn">Jubilation</span><span class="bl">Church bells, done right.</span></div>
+      <div class="bottle-cell"><span class="bn">Interlude</span><span class="bl">Doesn't ask permission.</span></div>
+      <div class="bottle-cell"><span class="bn">Reflection</span><span class="bl">Bought two bottles.</span></div>
+      <div class="bottle-cell"><span class="bn">Epic</span><span class="bl">Named accurately, for once.</span></div>
+      <div class="bottle-cell"><span class="bn">Overture</span><span class="bl">Outlasts the headliner.</span></div>
+      <div class="bottle-cell"><span class="bn">Honor</span><span class="bl">Wears well, unforgiving rooms.</span></div>
+      <div class="bottle-cell"><span class="bn">Dia</span><span class="bl">Daylight, extract-strength.</span></div>
+    </div>
+
+    <div class="depth-row">
+      <div><h4>Oud &amp; Oriental</h4><p><b>Montale Black Aoud, Tom Ford Oud Wood, Dior Oud Ispahan, Roja Aoud Parfum,</b> Ajmal Wisal Dhahab, Atkinsons Oud Save the King.</p></div>
+      <div><h4>Niche &amp; Indie</h4><p>Serge Lutens ×4, Matière Première Falcon Leather, Byredo Rouge Chaotique, Nasomatto, Maison Crivelli ×2.</p></div>
+      <div><h4>Ultra-Premium</h4><p>Roja Dove Vetiver, Xerjoff Overture + Erba Pura, Nishane Afrika Olifant, Marc-Antoine Barrois Ganymede.</p></div>
+      <div><h4>Designer Anchors</h4><p>Dior ×8 — full Sauvage arc, Tom Ford ×9, Hermès ×4, Guerlain ×5.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="dispatch">
+  <div class="wrap">
+    <span class="sec-num dot">( 04 ) FIELD NOTES</span>
+    <h2 class="sec-title">Writing, not just collecting.</h2>
+
+    <div class="dispatch">
+      <span class="issue">Issue 02</span>
+      <h3>The boutique is the easy part</h3>
+      <p>Every quarter, a handful of niche and artisanal houses report growth numbers that would embarrass most mainstream FMCG brands — 60%, 90%, sometimes higher. The instinct is to read that as validation and open the next store. Opening the store is the easy part.</p>
+      <p>India rewards patience more than most markets. A market entry built on distribution alone plateaus fast. The houses that win India will be the ones that treat the first store as a beachhead for building real local category fluency, not a footnote on a global expansion slide.</p>
+    </div>
+
+    <div class="dispatch" style="margin-top:36px;">
+      <span class="issue">Issue 01</span>
+      <h3>Oud, sold two ways: Dubai and Singapore</h3>
+      <p>In Dubai, oud is heritage first — a serious house can put agarwood front and center because the customer already knows what they're smelling. The sell is depth.</p>
+      <p>In Singapore, oud arrives as a discovery. The sell there is translation — without losing what makes it oud in the first place.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="contact">
+  <div class="wrap">
+    <span class="sec-num dot" style="justify-content:center;">( 05 ) CONTACT</span>
+    <h2>Open to relocating across the GCC. Ready now.</h2>
+    <p class="lede" style="max-width:460px;">No agency, no middleman. Direct replies, no filter — whichever channel is easiest for you.</p>
+    <div class="contact-cta">
+      <a class="btn btn-solid" href="mailto:mailsiget@gmail.com?subject=Let%27s%20talk">mailsiget@gmail.com</a>
+      <a class="btn btn-ghost" href="https://wa.me/919677275950" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/shiva-vaidyanathan-" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <p class="fine-print">SHIVA VAIDYANATHAN ( 001 ) — CHENNAI, INDIA — OPEN TO UAE / KSA / OMAN</p>
+  </div>
+</footer>
+
+</body>
+</html>
